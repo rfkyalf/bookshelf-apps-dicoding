@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rifky Bookshelf</title>
+  </head>
+  <body>
+    <div class="search-container">
+      <input class="search" type="text" placeholder="search...">
+    </div>
+    <header>
+      <section class="hero">
+        <div class="layer"></div>
+        <div class="container-title">
+          <h1 class="title">
+            <span>Bookshelf,</span>
+            Organize Your Book Collection Effortlessly
+          </h1>
+          <a href="#add-new">
+            <span>Getting Started</span>
+            <img src="assets/icons/arrow.png" alt="..." />
+          </a>
+        </div>
+      </section>
+    </header>
+    <section id="add-new">
+      <div class="content-container">
+        <h1>
+            <span>ADD</span>&nbsp;NEW COLLECTIONS
+        </h1>
+        <form action="">
+            <input class="input-form" type="text" placeholder="Book Title" name="title" required>
+            <input class="input-form" type="text" placeholder="Author" name="author" required>
+            <input class="input-form" type="text" placeholder="Published" name="year" pattern="^\d+$" required>
+            <select class="input-form" name="isCompleted"> 
+                <option value="">Have you finished reading it?</option>
+                <option value="true">Already</option>
+                <option value="false">Not yet</option>
+            </select>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+    <section class="dua">
+        <div class="content2-container">
+            <h1>
+                <span>HAS</span>&nbsp;BEEN READ
+            </h1>
+            <div class="read-card">
+            </div>
+        </div>
+    </section>
+    <section class="tiga">
+        <div class="content3-container">
+            <h1><span>UNFINISHED</span>&nbsp;READ</h1>
+            <div class="unfinish-card"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <a href="mailto:alfarez2325@gmail.com" target="_blank">
+            <img src="assets/icons/email.png" alt="email" title="email">
+          </a>
+          <a href="https://www.instagram.com/rfkyalf/" target="_blank">
+            <img src="assets/icons/ig.png" alt="ig" title="instagram">
+          </a>
+          <a href="https://github.com/rrifky" target="_blank">
+            <img src="assets/icons/git.png" alt="git" title="github">
+          </a>
+          <a href="https://www.linkedin.com/in/rifky-alfarez-8b53bb2b6/" target="_blank">
+            <img src="assets/icons/in.png" alt="linkedin" title="linkedin">
+          </a>
+        </div>
+        <p style="font-size: 20px; color: #eef2ff">Made with <span style="color: #ec4899">❤</span> by <span style="font-weight: bold;">Rifky Alfarez</span> </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
